@@ -9,7 +9,7 @@ func main() {
 	current_time := time.Now()
 	fmt.Println(current_time.Format(time.RFC1123))
 	var expmileage float64 = 2000 // here 2000 is expected mileage of a chain in kilometers
-	var X9 = [24]float64{0, 20, 210, 142, 56, 24, 60, 73, 130, 56, 103, 220, 111}
+	var X9 = [24]float64{0, 20, 210, 142, 56, 24, 60, 73, 130, 56, 103, 220, 126}
 	//fmt.Printf("X9 bridge series in kilometer ")
 	//fmt.Println(X9)
 	fmt.Printf("X9 :")
@@ -17,7 +17,7 @@ func main() {
 	for _, value := range X9 {
 		sumX9 += value
 	}
-	fmt.Printf("%.0f kilometers as on 05 september 2022.\n", sumX9)
+	fmt.Printf("%.0f kilometers as on 06 september 2022.\n", sumX9)
 	var X9percent float64
 	X9percent = (sumX9 / expmileage) * 100
 	fmt.Printf("chain X9 reached %d percent wear\n", int64(X9percent))
@@ -42,7 +42,7 @@ func main() {
 		fmt.Printf("Warning! Replace the chain Z9 with new one\n")
 	}
 	{
-		fmt.Printf("RIVERSIDE-500 total traveling distance is %.0f kilometers as on 05 september 2022,", sumX9+sumZ9)
+		fmt.Printf("RIVERSIDE-500 total traveling distance is %.0f kilometers as on 06 september 2022,", sumX9+sumZ9)
 	}
 	pdate := time.Date(2021, time.Month(11), 10, 0, 0, 0, 0, time.UTC)
 	cdate := time.Now()
